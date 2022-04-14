@@ -13,25 +13,31 @@
 发现页面的功能模块有：顶部导航栏有签到功能，点击后可进入签到页面签到得积分。然后下面是搜索框，点击后进入搜索页面输入文字进行搜索，目前没有搭建起后台，所以真正的搜索功能还实现不了。再下来就是滚动标签栏，用户可点击也可滑动到自己看的内容。
 
 其中首页大致的结构是轮播图(点击后可进入对应的内容，可以是文章或视频或者其他内容)+内容分类模块(大致分类内容如图所示，后期也可能修改)+每日必看模块(是一个横向滚动的内容形式，点击后可以看到对应的视频内容)+每日必阅模块(和每日必看模块的表现形式一样，点击后可以阅读对应的文章)+发现新知识模块(是一个文章列表的表现形式，包括相关图片，文章标题等等内容)。
-![发现页面首页](./InterfacePreview/discover/index.jpg) 
+
+![发现页面首页](https://gitee.com/tsmx99/no_worries_school/raw/main/InterfacePreview/discover/index.jpg) 
 
 标签栏第二个程序员模块是一个供程序员学习的平台，界面展现形式如图。以后将为用户提供查看学习路线，学习资源，工具，求职和软技能的文章内容，虽然暂时还没有足够的才华生产这些知识，但本人作为一个程序员，做一个知识的搬运工的能力还是有的。当然为了避免侵权，会在文章开头或者文末说明文章来源，并附上原作者的名字和其公众号地址或者网址。
-![程序员模块]InterfacePreview/discover/programmer.jpg)
+![程序员模块](https://gitee.com/tsmx99/no_worries_school/raw/main/InterfacePreview/discover/programmer.jpg)
 
 标签栏第三个视频模块是一个提供看视频的功能，界面借鉴b站APP的界面样式。界面展现形式如图。。视频内容主要以学习为主，视频来源于各个平台的视频，同样为了避免侵权，会说明每个视频来自于哪个平台，哪个作者，并附上原视频地址。
-![视频模块](InterfacePreview/discover/video.jpg)
+
+![视频模块](https://gitee.com/tsmx99/no_worries_school/raw/main/InterfacePreview/discover/video.jpg)
 
 书籍推荐模块是向用户推荐各个行业(包括程序员，经济学，金融学，心理学等等)的一些经典好书，界面展现形式如图。用户点击对应的书籍后即可进入对应的书籍详情描述(包括简介，专家推荐序，书中经典语录)页面，在这里用户可以实现收藏和分享功能，还会附上纸质书购买地址和电子书阅读地址。
-![书籍推荐模块](InterfacePreview/discover/book.jpg)
+
+![书籍推荐模块](https://gitee.com/tsmx99/no_worries_school/raw/main/InterfacePreview/discover/book.jpg)
 
 最后一个在线网站模块是为用户提供各种非常好用的在线网站资源(内容包括在线影视站，学习，刷题，求职，程序员在线工具等等内容，后期会不断添加，内容会尽量做的全面)，界面展现形式如图。用户点击对应的网站卡片后会复制对应的网址。然后去本地浏览器粘贴打开。
-![在线网站模块](InterfacePreview/discover/Internet.jpg)
+
+![在线网站模块](https://gitee.com/tsmx99/no_worries_school/raw/main/InterfacePreview/discover/Internet.jpg)
 
 ### 刷题页面
 
 刷题功能暂时只支持刷选择题，答题的知识内容有计算机基础，编程语言，数据结构，算法和框架技术。界面展现形式如图。用户点击练习后即可进入答题页面，抽取的题目是从数据库库对应的知识模块里随机抽取的10道选择题，如果是有代码分析的题目，会像markdown一样解析，然后展示代码块。用户答完题目后点击提交即可查看结果。之后用户可选择查看解析或者继续练习。在这里还要记录用户的答错的题目，添加到用户的错题集表里去，方便用户复习。
-![刷题页面](InterfacePreview/test/test.jpg)
-![刷题页面2](InterfacePreview/test/test2.jpg)
+
+![刷题页面](https://gitee.com/tsmx99/no_worries_school/raw/main/InterfacePreview/test/test.jpg)
+
+![刷题页面2](https://gitee.com/tsmx99/no_worries_school/raw/main/InterfacePreview/test/test2.jpg)
 
 ### 共享页面
 
@@ -40,6 +46,7 @@
 在闲鱼市场模块用户可以查看已经发布过的二手物品，看中后可以与对应的卖家沟通协商什么价格或者可以拿什么东西换。还可以发布自己的闲置物品卖出去。
 
 AA聚会活动模块用户可以查看别人发布的活动(活动内容可以是一起吃饭，玩耍，拼车，聚会，剧本杀，游戏等等大学生想到的活动都可以)，在这里会展示相关的活动信息(包括活动名称，活动地点，活动时间，活动人数，主办方希望能够参加的人数和其联系方式等等其他信息)，用户可以选择自己想参加的活动，然后与主办方联系。另外还要每个活动的活动状态(是否进行中，是否一开始，还需要几人，是否已结束)，主办方也可以自己选择结束活动。另外平台会记录每个参与活动的用户诚信分(最开始是100分)，用户每次如约参加一次活动，会为其加上10分，反之会扣10分，主办方可以看到每个参加他活动的人的诚信分来选择是否要他参加。用户还可以选择发布自己的活动，让别人来参加。界面如图所示，暂时是这样子，后期可能会作修改。请原谅我暂时用美女图片展示，哈哈哈哈哈！
+
 ![共享页面](https://gitee.com/tsmx99/no_worries_school/raw/main/InterfacePreview/share/share.jpg)
 
 ### 消息页面
@@ -49,4 +56,5 @@ AA聚会活动模块用户可以查看别人发布的活动(活动内容可以�
 ### 个人中心页面
 
 最后就是用户个人中心了，在这里要管理用户在该平台留下的各项数据，界面如图所示，其中一些数据后期可能会作修改更新。
-![个人中心页面](InterfacePreview/mine/mine.jpg)
+
+![个人中心页面](https://gitee.com/tsmx99/no_worries_school/raw/main/InterfacePreview/mine/mine.jpg)
