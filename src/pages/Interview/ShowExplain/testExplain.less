@@ -1,0 +1,111 @@
+@className:explain;
+
+
+.@{className}{
+  width: 100%;
+  overflow-y: scroll;
+  &__swiper{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    &-item{
+      width: 100%;
+      height: 100%;
+    &-top{
+      width:95%;
+      margin:0 2.5%;
+      &-name{
+        width:100%;
+        font-size: 35px;
+      }
+      &-scroll{
+        width:100%;
+        margin-top: 10px;
+        border-radius: 15px;
+        background-color: #123456;
+        &-code{
+        width:100%;
+        padding: 20px;
+        font-size: 36px;
+        font-family: "Helvetica Neue",;
+        color:#999;
+      }
+      }
+    
+    }
+    &-middle{
+      width:95%;
+      margin: 25px 2.5%;
+      &-select{
+        width:100%;
+        min-height: 100px;
+        display:flex;
+        align-items: center;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        font-size: 35px;
+        &-index{
+          padding-left: 20px;
+          margin-right: 25px;
+        }
+      }
+  
+    }
+    &-bottom{
+      width:95%;
+      margin:0 2.5%;
+    &-result{
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 35px;
+        color:#06c484;
+      }
+      &-title{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        font-size: 40px;
+        font-weight: 600;
+        border-left: 10px solid #fd7109;
+      }
+      &-desc{
+        width: 100%;
+        margin: 20px 0;
+        font-size: 35px;
+      }
+    }
+    }
+
+  }
+  &__bottom{
+    width: 100%;
+    height: 122px;
+    position: fixed;
+    bottom:0;
+    left:0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    .btn{
+      width:40%;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+      font-size:40px;
+      font-weight: 600;
+      border-radius:18px;
+    }
+    &-btn1{
+      color: #999;
+      background-color: #F8F8FF;
+    }
+    &-btn2{
+      color:#fff;
+      background-color: #fd7109;
+    }
+  }
+}

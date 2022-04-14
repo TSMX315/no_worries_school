@@ -1,0 +1,31 @@
+@className:navigator;
+
+.@{className}{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    &__logo{
+       margin-left: 30px;
+       &-img{
+         width:200px;
+         height:70px;
+       }
+    }
+    &__home{
+      &-icon{
+      width: 60px;
+      height: 60px;
+      position: relative;
+      &-dots{
+        width:18px;
+        height:18px;
+        position: absolute;
+        right: -9px;
+        top: 5px;
+        border-radius: 50%;
+        z-index: 9;
+        background-color: red;
+      } 
+      }
+    }
+  }

@@ -1,0 +1,84 @@
+@className: goods-detail;
+
+.@{className}{
+   &__action {    
+    position: absolute;    
+    left: 30px;    
+    z-index: 2;    
+    &-item {      
+      width: 30Px;      
+      height: 30Px;
+      margin-bottom: 25px;     
+      border-radius: 30Px;      
+      background-color: rgba(0, 0, 0, 0.1);    
+      margin-bottom: 10px;    
+      display: flex;    
+      justify-content: center;    
+      align-items: center;    
+    &-text {      
+      color: #FFFFFF;    
+    }  
+  }
+}
+    &__swiper {  
+      width: 100%;  
+      background-color: #F5F5F5;  
+      position: absolute;  
+      top: 0;
+    }
+    &__content {  
+      background-color: #FFFFFF;  
+      padding-top: 15Px;  
+      padding-left: 20Px;  
+      padding-right: 20Px;  
+      border-radius: 20Px;  
+      min-height: 800Px;  
+      &-title {    
+        font-size: 16Px;    
+        font-weight: 700;  
+      }  
+    &-desc {    
+      margin-top: 30px;  
+    }
+  }
+    &__button {  
+      position: absolute;  
+      width: 100%;  
+      height: 80px;  
+      bottom: 10px;  
+      left: 0;    
+      z-index: 3;
+       &-content {      
+         overflow: hidden;      
+         display: flex;      
+         flex-direction: row;      
+         margin: 0 40px;      
+         height: 100%;      
+         border-radius: 40px;      
+        }
+         &-swap {      
+            flex: 1;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100%;  
+            line-height: 80px;  
+            text-align: center;  
+             background-color: #06c484; 
+           &-text {        
+             color: #FFFFFF;      
+            }    
+          }
+          &-buy {      
+            flex: 1;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100%;  
+            line-height: 80px;  
+            text-align: center;
+            background-color: #fd7109;     
+            &-text {        
+            color: #FFFFFF;      
+          }    
+        }
+    }
+}

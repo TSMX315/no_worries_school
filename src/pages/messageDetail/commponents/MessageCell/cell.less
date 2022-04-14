@@ -1,0 +1,67 @@
+@fromBg: #3399ff;
+@fromColor: #fff;
+@toBg: #fd7109;
+@toColor: #fff;
+@className: messsage-cell;
+
+// 通用样式
+.@{className} {
+  display: flex;
+  margin-top: 40px;
+  &__avatar{
+    width: 80px;
+    height: 80px;
+    border-radius:20px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  &__message{
+    font-size: 25px;
+  }
+
+}
+  // 来自对方消息的样式
+.@{className}-from{
+  flex-direction:row;  
+  align-items: flex-end;
+  &__message{
+    color:@fromColor;
+  }
+ &__message-wrapper{
+     position: relative;    
+     padding: 20px;    
+     margin-left: 20px;    
+     background-color: @fromBg;    
+     border-radius: 10px;
+     .arrow{
+        position: absolute;      
+        left: -30px;      
+        top: 20px;      
+        border: 20px solid transparent;      
+        border-right: 20px solid @fromBg;
+     }
+  }
+}
+// 发送自己消息的样式
+.@{className}-to{
+  flex-direction:row-reverse;  
+  align-items: flex-start;
+  &__message{
+    color:@toColor;
+  }
+ &__message-wrapper{
+     position: relative;    
+     padding: 20px;    
+     margin-right: 20px;    
+     background-color: @toBg;    
+     border-radius: 10px;
+     .arrow{
+        position: absolute;      
+        right: -30px;      
+        top: 20px;      
+        border: 20px solid transparent;      
+        border-left: 20px solid @toBg;
+     }
+  }
+}
+

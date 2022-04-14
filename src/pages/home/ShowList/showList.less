@@ -1,0 +1,112 @@
+@className:list;
+
+.@{className}{
+  width: 100%;
+  overflow-y: scroll;
+  position: relative;
+  &__top{
+    width: 100%;
+    &-title{
+      width: 100%;
+      height: 100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 45px;
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+  &__content{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    background-color: #fff;
+    border-top-left-radius:35px;
+    border-top-right-radius:35px;
+    &-top{
+      width: 95%;
+      height:70px;
+      margin:0 2.5%;
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 0.5px solid #F8F8FF;
+      font-size: 30px;
+      color:#999;
+      &-data{
+        color:#333;
+        font-size: 32px;
+      }
+    }
+    &-list{
+      width: 95%;
+      height: 220px;
+      margin:25px 2.5%;
+      display:flex;
+      align-items: center;
+      &:last-child{
+        padding-bottom: 25px;
+      }
+      &-left{
+        width:160px;
+        height: 210px;
+        margin-right: 25px;
+        border: 1px solid #eee;
+        border-radius:5px;
+        &-img{
+          width:160px;
+          height: 210px;
+          border-radius:5px;
+        }
+      }
+      &-right{
+        flex:1;
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-text{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+         &-name{
+          width:100%;
+          margin-bottom: 9px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 37px;
+          font-weight: 700;
+        }
+        &-intro{
+          width:100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+           display:-webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          font-size: 30px;
+          color:#999
+        }
+        }
+        &-action{
+          width:100%;
+          display: flex;
+          justify-content: flex-end;
+          &-text{
+            width: 150px;
+            height: 60px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 28px;
+            font-size: 30px;
+            color:#fd7109;
+            background-color: rgba(220,220,220,0.5);
+          }
+        }
+      }
+    }
+  }
+}

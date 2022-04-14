@@ -1,0 +1,62 @@
+@className: login;
+@color:#fd7109;
+
+.@{className}{
+  &__start{
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-img{
+      width: 200px;
+      height: 200px;
+    }
+      &-call{
+        font-size: 59px;
+        font-weight: bold;
+        color:@color;
+      }
+  }
+  &__container{
+    margin-bottom: 30px;
+      &-button{
+    width: 100%;
+    &-button1{
+      width:80%;
+      height:70px;
+      display: flex;
+       align-items:center;
+       justify-content: center;
+      line-height: 70px;
+      margin: 20px 10%;
+      border-radius: 35px;
+      background-color: #06C484;
+      color: #fff;
+    }
+      &-button2{
+      width:80%;
+      height:70px;
+      display: flex;
+      align-items:center;
+      justify-content: center;
+      line-height: 70px;
+      margin: 20px 10%;
+      border-radius: 35px;
+      background-color: @color;
+      color: #fff;
+    }
+  }
+  &-protocol{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #999;
+  }
+  }
+
+}

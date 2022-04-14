@@ -1,0 +1,42 @@
+@className:cate;
+
+.@{className}{
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #eee;
+  &__container{
+    width:92%;
+    height: 250px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0 4% 30px;
+    border-radius: 15px;
+    &-left{
+      width:30%;
+      height:95%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 45px;
+      color:rgb(225,193,144);
+    }
+    &-right{
+      width:60%;
+      height:95%;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      &-list{
+        width:100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 32px;
+        color:#eee;
+      }
+    }
+  }
+}
